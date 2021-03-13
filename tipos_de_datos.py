@@ -5,57 +5,100 @@ data = ('  GARCIA,gonzalez,        rodriguez  ,FERNANDEZ ,LOPEZ,martinez ,  sanc
 """Dividir el string contenido en la variable `data` en donde se encuentre el 
 primer caracter `\n` y guardar el resultado en una variable llamada `var1`.
 """
-
+var1= data.split("\n", 1)
+#print(var1)
 
 """Guardar el primer elemento de la variable `var1` en una variable llamada 
 `apellidos` y el segundo elemento en una llamada `decimales`.
 """
+
+apellidos = var1[0]
+decimales = var1[1]
+
+#print(apellidos)
 
 
 """Dividir el string contenido en la variable `apellidos` en donde se encuentre el 
 el caracter `,` y guardar el resultado en una variable llamada `apellidos_list`.
 """
 
+apellidos_list = apellidos.split(",")
+
+#print(apellidos_list)
+
 
 """Dividir el string contenido en la variable `decimales` en donde se encuentre el 
 el caracter `;` y guardar el resultado en una variable llamada `decimales_list`.
 """
+decimales_list = decimales.split(";")
+# print(decimales_list) 
 
 
 """Obtener el elemento en la posición 38 de `decimales_list`, procesarlo para 
 convertirlo en un entero y guardarlo en variable `var2`.
 """
+#print(decimales_list[38])
+
+var1= float(decimales_list[38])  
+#print(var1)
+
+var2=int(var1)
+#print(var2)
+
+#cadena = "Hola mundo terrestre soy Yo"
+#separador = " "
+#separado_por_espacios = cadena.split(separador, 2)
+#print("Separado por espacios es:", separado_por_espacios)
+#var1= cadena.split(" ", 1)
+#print(separado_por_espacios[2], "\n")
+#print(var1[1])
+
 
 
 """Obtener el valor en la posición que indique dicho entero (`var2`) de la lista 
 `apellidos_list`. Guardar el resultado en variable `apellido`.
 """
+apellido = apellidos_list[var2]
 
-
+print(apellido)
 """obtener la longitud (cantidad de caracteres) de la variable `apellido` y 
 guardar el resultado en `len_apellido`.
 """
-
+len_apellido=len(apellido)
+#print(len_apellido)
 
 """Remover los espacios en blanco que hayan en la variable `apellido` y guardar 
 resultado en `apellido2`.
 """
+apellido2 = apellido.strip()
+
+#print(apellido2)
 
 
 """Guardar en `apellido_es_mayuscula` si `apellido2` es un string que contiene 
 solo letras mayúsculas.
 """
+apellido_es_mayuscula=print(apellido2.isupper())
 
+#print(apellido_es_mayuscula)
 
 """Convertir la variable `apellido2` de mayúsculas a minúsculas si está en mayúsculas, 
 o de minúsculas a mayúsculas si está en minúsculas y guardarla en `apellido3`.
 """
 
+print(apellido2)
+
+apellido3 = apellido2.upper()
+
+print(apellido3)
+
 
 """Crear variable `a_in_apellido` que contenga la cantidad de letras "a" que contiene 
 la variable `apellido2`.
 """
+a_in_apellido=apellido2.count("a")
 
+print(a_in_apellido)
 
 """Crear variable `apellido_end_ez` que contenga si la variable `apellido2` 
 termina con el string `"ez"`.
