@@ -104,12 +104,18 @@ print(a_in_apellido)
 termina con el string `"ez"`.
 """
 
+apellido_end_ez= apellido2.endswith("ez")
+
+print(apellido_end_ez)
 
 """Crear tupla llamada `apellidos_tuple` que contenga los elementos desde el 49 
 al 23 (en orden invertido), saltandose de a 1 elemento (49, 47, 45 , etc) de la
 lista `apellidos_list`.
 """
 
+apellidos_tuple=apellidos_list [49 : 23 : -2]
+
+print(apellidos_tuple)
 
 """Crear variable `apellidos_list2` que contenga una copia de `apellidos_tuple` 
 (con las conversiones que sean necesarias) y agregarle el elemento de la 
